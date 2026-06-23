@@ -17,7 +17,9 @@ apt-get install -y curl jq awscli
 # INSTALL K3S
 # ==========================================
 
-curl -sfL https://get.k3s.io | sh -
+curl -sfL https://get.k3s.io | \
+INSTALL_K3S_EXEC="server --tls-san <PUBLIC_IP>" \
+sh -
 
 # ==========================================
 # WAIT FOR K3S TO START
