@@ -18,7 +18,7 @@ apt-get install -y curl jq awscli
 # ==========================================
 
 curl -sfL https://get.k3s.io | \
-INSTALL_K3S_EXEC="server --tls-san 44.203.15.145" \
+INSTALL_K3S_EXEC="server --tls-san 44.213.121.118" \
 sh -
 
 # ==========================================
